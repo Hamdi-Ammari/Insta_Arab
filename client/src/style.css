@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FAFAFA;
+}
+.title{
+    font-family: Courgette, cursive !important;
+    color:#000;
+}
+.MuiToolbar-root{
+    justify-content: space-around;
+    align-items: center;
+}
+@media(max-width:1100px) {
+    .MuiToolbar-root{
+        justify-content: space-between;
+    }
+}
+.iconsDiv{
+    display: flex;
+    align-items: center;
+}
+.MuiAvatar-root {
+    margin-left: 0 !important;
+}
+.menuItem{
+    border-radius: 0% !important;
+    color: black !important;
+}
+.MuiButtonBase-root{
+    justify-content:flex-start !important;
+}
+::-webkit-file-upload-button{
+    width:220px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.MuiButton-label {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+input[type="file" i]{
+    width: 402px;
+}
+.content{
+    padding: 13px 16px;
+    position: relative;
+}
+.heart{
+    position: absolute;
+    background-position: left;
+    background-size: 2900%;
+    height: 90px;
+    width: 90px;
+    top: 50%;
+    left: 2.5%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+  }
+  .active-heart{
+    animation: animate .8s steps(28) 1;
+    background-position: right;
+  }
+  @keyframes animate {
+    0%{
+      background-position: left;
+    }
+    100%{
+      background-position: right;
+    }
+  }
+

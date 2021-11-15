@@ -1,0 +1,111 @@
+import {makeStyles} from '@material-ui/core/styles';
+
+export default makeStyles (() => ({
+    coverDivOn:{
+      position:'fixed',
+      width:'100%',
+      height:'100vh',
+      top:'0',
+      left:'0',
+      background:'rgba(0,0,0,.6)',
+      zIndex:'1111',
+      display:'flex',
+      justifyContent:'center',
+      alignItems:'center',
+      opacity:'1',
+    },
+    coverDivOff:{
+        position:'fixed',
+        width:'100%',
+        height:'100vh',
+        top:'0',
+        left:'0',
+        background:'rgba(0,0,0,.6)',
+        zIndex:'1111',
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center',
+        visibility:'hidden',
+        opacity:'0',
+    },
+    postDiv:{
+        background:'#fff',
+        height:'400px',
+        width:'450px',
+        borderRadius:'7px',
+        boxShadow:'1px 1px 10px #222',
+        position:'relative'
+    },
+    title:{
+        textAlign:'center',
+        padding:'10px',
+        fontSize:'30px'
+    },
+    closeIconBtn:{
+        position:'absolute',
+        top:'0',
+        right:'0',
+    },
+    closeIcon:{
+        fontSize:'30px'
+    },
+    user:{
+        display:'flex',
+        alignItems:'center',
+        margin:'10px 0'
+    },
+    userName:{
+        fontWeight:'bold'
+    },
+    form:{
+        width:'100%',
+        height:'100%',
+        display:'flex',
+        flexDirection:'column',
+    },
+    textInput:{
+        width:'100%',
+        height:'100px',
+        margin:'10px 0 20px',
+        resize:'none',
+        border:'1px solid #DBDBDB',
+        outline:'none',
+        padding:'10px',
+        fontSize:'18px'
+    },
+    photoInputDiv:{
+        position:'relative',
+        width:'100%',
+        height:"45px",
+        marginBottom:'10px',
+        background:'#DBDBDB',
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center' ,
+    },
+    photoInput:{
+        width:'100%',
+        height:'45px',
+        fontSize:'16px',
+        marginRight:'10px',
+        outline:'none',
+        background:'blue',
+    },
+    addPhoto:{
+        position:'absolute',
+        top:'0',
+        left:'0',
+        zIndex:'1111',
+        background:'#DBDBDB',
+        width:'220px',
+        height:'41px',
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center' ,
+        pointerEvents:'none',
+    },
+    addPhotoText:{
+        fontSize:'18px',
+        cursor:'pointer'
+    }
+}))
